@@ -41,9 +41,9 @@ function draw() {
   rectMode(CENTER);
   background("#C9EB9F ");
  
-  dustbinObj.display();
   paperObject.display();
   groundObject.display();
+  dustbinObj.display();
   
  
   
@@ -54,7 +54,7 @@ function draw() {
 function keyPressed() {
   	if (keyCode === UP_ARROW) {
 
-    	Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:85,y:-85});
+    	Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:90,y:-91});
     
   	}
 }
